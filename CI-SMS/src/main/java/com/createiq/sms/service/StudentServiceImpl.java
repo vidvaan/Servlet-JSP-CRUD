@@ -30,8 +30,7 @@ public class StudentServiceImpl implements StudentService{
 	}
 
 	public List<Student> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return studentDAO.findAll();
 	}
 
 }
