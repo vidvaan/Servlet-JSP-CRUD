@@ -24,4 +24,24 @@
     <servlet-name>FindAllStudentController</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateStudentController</display-name>
+    <servlet-name>UpdateStudentController</servlet-name>
+    <servlet-class>com.createiq.sms.controller.UpdateStudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStudentController</servlet-name>
+    <url-pattern>/updateStudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteStudentController</display-name>
+    <servlet-name>DeleteStudentController</servlet-name>
+    <servlet-class>com.createiq.sms.controller.DeleteStudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteStudentController</servlet-name>
+    <url-pattern>/deleteStudent</url-pattern>
+  </servlet-mapping>
 </web-app>

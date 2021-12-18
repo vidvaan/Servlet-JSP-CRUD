@@ -15,18 +15,16 @@ public class StudentServiceImpl implements StudentService{
 	}
 
 	public void update(Student student) {
-		// TODO Auto-generated method stub
-		
+		studentDAO.update(student);
 	}
 
 	public void deleteById(Integer sid) {
-		// TODO Auto-generated method stub
+		studentDAO.deleteById(sid);
 		
 	}
 
 	public Student findById(Integer sid) {
-		// TODO Auto-generated method stub
-		return null;
+		return studentDAO.findById(sid);
 	}
 
 	public List<Student> findAll() {

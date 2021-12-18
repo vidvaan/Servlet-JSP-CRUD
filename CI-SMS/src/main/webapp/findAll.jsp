@@ -20,16 +20,16 @@
     <th>Student Id</th>
     <th>Student Name</th>
     <th>Student Fee</th>
-     <th>Update</th>
     <th>Delete</th>
+    <th>Update</th>
   </tr>
   <c:forEach items="${students}" var="student">
   <tr>
     <td><c:out value="${student.sid}"></c:out></td>
     <td><c:out value="${student.sname}"></c:out></td>
     <td><c:out value="${student.sfee}"></c:out></td>
-      <td><img src="icon/delete.png" height="25px;" width="25px;"></img></td>
-    <td><img src="icon/edit.png"height="25px;" width="25px;"></img></td>
+      <td><a href="./deleteStudent?sid=${student.sid}"><img src="icon/delete.png" height="25px;" width="25px;"></img></a></td>
+    <td><a href="./updateStudent?sid=${student.sid}"><img src="icon/edit.png"height="25px;" width="25px;"></img></a></td>
   </tr>
  </c:forEach>
 </table>
