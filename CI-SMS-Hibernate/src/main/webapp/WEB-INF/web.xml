@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>CI-SMS</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AddStudentController</display-name>
+    <servlet-name>AddStudentController</servlet-name>
+    <servlet-class>com.createiq.sms.controller.AddStudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddStudentController</servlet-name>
+    <url-pattern>/addStudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FindAllStudentController</display-name>
+    <servlet-name>FindAllStudentController</servlet-name>
+    <servlet-class>com.createiq.sms.controller.FindAllStudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindAllStudentController</servlet-name>
+    <url-pattern>/findAll</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateStudentController</display-name>
+    <servlet-name>UpdateStudentController</servlet-name>
+    <servlet-class>com.createiq.sms.controller.UpdateStudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStudentController</servlet-name>
+    <url-pattern>/updateStudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteStudentController</display-name>
+    <servlet-name>DeleteStudentController</servlet-name>
+    <servlet-class>com.createiq.sms.controller.DeleteStudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteStudentController</servlet-name>
+    <url-pattern>/deleteStudent</url-pattern>
+  </servlet-mapping>
+</web-app>
