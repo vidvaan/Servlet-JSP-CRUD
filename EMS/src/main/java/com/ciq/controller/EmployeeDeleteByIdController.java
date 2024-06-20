@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/deleteEmpById")
+@WebServlet("/deleteEmpById.do")
 public class EmployeeDeleteByIdController extends HttpServlet {
 
 	@Override
@@ -20,7 +20,7 @@ public class EmployeeDeleteByIdController extends HttpServlet {
 		EmployeeService employeeService = new EmployeeServiceImpl();
 		int eid = Integer.parseInt(request.getParameter("eid"));
 		employeeService.deleteById(eid);
-		request.getRequestDispatcher("/findAll").forward(request, response);
+		request.getRequestDispatcher("findAll.do").forward(request, response);
 	}
 
 }

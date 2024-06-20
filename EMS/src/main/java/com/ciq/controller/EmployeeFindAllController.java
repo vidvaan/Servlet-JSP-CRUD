@@ -13,7 +13,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/findAll")
+@WebServlet("/findAll.do")
 public class EmployeeFindAllController extends HttpServlet {
 
 	private EmployeeService employeeService = new EmployeeServiceImpl();
@@ -21,7 +21,6 @@ public class EmployeeFindAllController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		List<Employee> employees = employeeService.findAll();
-
 		req.setAttribute("employees", employees);
 		req.getRequestDispatcher("findAll.jsp").forward(req, resp);
 

@@ -5,10 +5,10 @@
         <a class="nav-link active" href="./">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./findAll">Find All Employees</a>
+        <a class="nav-link" href="./findAll.do">Find All Employees</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./addEmp">Add New Employee</a>
+        <a class="nav-link" href="./addEmp.do">Add New Employee</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>

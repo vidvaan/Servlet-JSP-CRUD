@@ -19,7 +19,7 @@
 
 	<div class="container mt-3">
 		<h2>Update Employee</h2>
-		<form action="./updateEmp" method="post">
+		<form action="./updateEmp.do" method="post">
 			<div class="mb-3 mt-3">
 				<label for="eid">Employee Id:</label> <input type="text"
 					class="form-control" id="eid" placeholder="Enter Eid" name="eid" value="<%=employee.getEid()%>" readonly="readonly">

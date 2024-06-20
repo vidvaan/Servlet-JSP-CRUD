@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<jsp:include page="navbar.jsp"></jsp:include>
+<jsp:include page="navbar-home.jsp"></jsp:include>
 <div class="bg-light p-5 text-center">
   <h2>My First Bootstrap Page</h2>
   <p>Some Bootstrap buttons:</p>

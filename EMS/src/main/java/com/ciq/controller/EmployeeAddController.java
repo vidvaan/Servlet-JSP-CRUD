@@ -11,7 +11,7 @@ import com.ciq.dto.Employee;
 import com.ciq.service.EmployeeService;
 import com.ciq.service.EmployeeServiceImpl;
 
-@WebServlet("/addEmp")
+@WebServlet("/addEmp.do")
 public class EmployeeAddController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
   
@@ -35,7 +35,7 @@ public class EmployeeAddController extends HttpServlet {
 		EmployeeService employeeService = new EmployeeServiceImpl();
 		employeeService.add(employee);
 		
-		request.getRequestDispatcher("/findAll").forward(request, response);
+		request.getRequestDispatcher("/findAll.do").forward(request, response);
 	}
 
 }
