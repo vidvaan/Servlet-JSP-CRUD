@@ -18,13 +18,14 @@
 
 	<div class="container mt-3">
 		<h2>User Login Page</h2>
+		<div class="text-danger text-center">${error}</div>
 		<form action="./login.do" method="post">
 			<div class="mb-3 mt-3">
 				<label for="eid">Username:</label> <input type="text"
 					class="form-control" id="uname" placeholder="Enter Username" name="uname">
 			</div>
 			<div class="mb-3">
-				<label for="ename">Password:</label> <input type="text"
+				<label for="ename">Password:</label> <input type="password"
 					class="form-control" id="pass" placeholder="Enter Password"
 					name="pass">
 			</div>
